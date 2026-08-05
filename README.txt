@@ -1,11 +1,1 @@
-Update package with Lessons 1–3.
-
-Upload these files to the same GitHub repository:
-index.html
-lesson1.html
-lesson2.html
-lesson3.html
-styles.css
-script.js
-
-When GitHub asks, replace the existing files with the new versions.
+Upload all files in this folder to the existing GitHub repository. Replace index.html, styles.css, and script.js. Add lesson4.html, lesson5.html, and lesson6.html. Commit message: Add Lessons 4 to 6.

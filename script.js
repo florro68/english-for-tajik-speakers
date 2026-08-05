@@ -1,9 +1,1 @@
-
-let currentUtterance=null,currentText="",currentRate=.86;
-function chooseVoice(){const v=speechSynthesis.getVoices();return v.find(x=>x.lang.startsWith("en")&&/Google|Microsoft|Samantha|Daniel|Zira|David/i.test(x.name))||v.find(x=>x.lang.startsWith("en"))||v[0]}
-function speakText(text,rate=.86){speechSynthesis.cancel();currentText=text;currentRate=rate;const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=rate;u.pitch=1;const voice=chooseVoice();if(voice)u.voice=voice;currentUtterance=u;speechSynthesis.speak(u)}
-function pauseAudio(){if(speechSynthesis.speaking&&!speechSynthesis.paused)speechSynthesis.pause()}
-function resumeAudio(){if(speechSynthesis.paused)speechSynthesis.resume()}
-function replayAudio(){if(currentText)speakText(currentText,currentRate)}
-function speakWithPauses(items,pauseMs=3000,rate=.78){speechSynthesis.cancel();let i=0;currentText=items.join(". ");currentRate=rate;function next(){if(i>=items.length)return;const u=new SpeechSynthesisUtterance(items[i]);u.lang="en-US";u.rate=rate;const voice=chooseVoice();if(voice)u.voice=voice;u.onend=()=>{i++;setTimeout(next,pauseMs)};currentUtterance=u;speechSynthesis.speak(u)}next()}
-speechSynthesis.onvoiceschanged=chooseVoice;
+let currentText='',currentRate=.84;function voice(){let v=speechSynthesis.getVoices();return v.find(x=>x.lang.startsWith('en'))||v[0]}function speakText(t,r=.84){speechSynthesis.cancel();currentText=t;currentRate=r;let u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=r;let vv=voice();if(vv)u.voice=vv;speechSynthesis.speak(u)}function pauseAudio(){speechSynthesis.pause()}function resumeAudio(){speechSynthesis.resume()}function replayAudio(){if(currentText)speakText(currentText,currentRate)}function speakWithPauses(a,p=3000,r=.76){speechSynthesis.cancel();let i=0;currentText=a.join('. ');currentRate=r;function n(){if(i>=a.length)return;let u=new SpeechSynthesisUtterance(a[i]);u.lang='en-US';u.rate=r;let vv=voice();if(vv)u.voice=vv;u.onend=()=>{i++;setTimeout(n,p)};speechSynthesis.speak(u)}n()}
