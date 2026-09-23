@@ -1,0 +1,41 @@
+<!doctype html><html lang="tg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lesson 12</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body>
+<header class="site-header"><div class="wrap"><h1>Дарси 12: Обу Ҳаво ва Либос</h1><p>Lesson 12: Weather and Clothing</p><nav class="nav"><a href="index.html">Home</a><a href="lesson8.html">Lesson 8</a><a href="lesson9.html">Lesson 9</a><a href="lesson10.html">Lesson 10</a><a href="lesson11.html">Lesson 11</a><a href="lesson12.html" aria-current="page">Lesson 12</a></nav></div></header>
+<main class="wrap">
+<section><h2>Ҳадафи дарс</h2><p><b>Тоҷикӣ:</b> Обу ҳаворо тасвир кардан ва либоси мувофиқро интихоб кардан.</p><p><b>English:</b> Describe the weather and choose suitable clothing.</p><button class="primary" onclick="speakText('Describe the weather and choose suitable clothing.',.78)">▶ Listen</button></section>
+
+<section><h2>Луғат</h2><table><tr><th>English</th><th>Audio</th><th>Pronunciation</th><th>Тоҷикӣ</th></tr>
+<tr><td><b>sunny</b></td><td><button onclick="speakText('sunny',.72)">▶</button></td><td>/ˈsʌni/</td><td>офтобӣ</td></tr>
+<tr><td><b>rainy</b></td><td><button onclick="speakText('rainy',.72)">▶</button></td><td>/ˈreɪni/</td><td>боронӣ</td></tr>
+<tr><td><b>windy</b></td><td><button onclick="speakText('windy',.72)">▶</button></td><td>/ˈwɪndi/</td><td>шамолӣ</td></tr>
+<tr><td><b>snowy</b></td><td><button onclick="speakText('snowy',.72)">▶</button></td><td>/ˈsnəʊi/</td><td>барфӣ</td></tr>
+<tr><td><b>hot</b></td><td><button onclick="speakText('hot',.72)">▶</button></td><td>/hɒt/</td><td>гарм</td></tr>
+<tr><td><b>cold</b></td><td><button onclick="speakText('cold',.72)">▶</button></td><td>/kəʊld/</td><td>хунук</td></tr>
+<tr><td><b>coat</b></td><td><button onclick="speakText('coat',.72)">▶</button></td><td>/kəʊt/</td><td>палто</td></tr>
+<tr><td><b>shirt</b></td><td><button onclick="speakText('shirt',.72)">▶</button></td><td>/ʃɜːrt/</td><td>курта</td></tr>
+<tr><td><b>shoes</b></td><td><button onclick="speakText('shoes',.72)">▶</button></td><td>/ʃuːz/</td><td>пойафзол</td></tr>
+<tr><td><b>umbrella</b></td><td><button onclick="speakText('umbrella',.72)">▶</button></td><td>/ʌmˈbrɛlə/</td><td>чатр</td></tr>
+</table></section>
+
+<section><h2>Гӯш кунед, баъд матнро бинед</h2><button class="primary" onclick="speakText('Amina: What is the weather like today? Farid: It is cold, windy, and rainy. Amina: I need my coat and umbrella. Farid: Yes. We are going to the bus station. The bus leaves at ten. Amina: Let us go by taxi.',.76)">▶ Listen</button>
+<div class="question"><p><b>What does Amina need?</b></p><button class="choice" onclick="chooseAnswer(this,true)">A coat and an umbrella</button><button class="choice" onclick="chooseAnswer(this,false)">A shirt and water</button><button class="choice" onclick="chooseAnswer(this,false)">A doctor and medicine</button><p class="feedback"></p></div>
+<button onclick="reveal('dialogue12')">Show or hide transcript</button><div id="dialogue12" class="dialogue" hidden>Amina: What is the weather like today?<br>Farid: It is cold, windy, and rainy.<br>Amina: I need my coat and umbrella.<br>Farid: Yes. We are going to the bus station. The bus leaves at ten.<br>Amina: Let us go by taxi.</div></section>
+
+<section><h2>Грамматика</h2><p><b>What is the weather like?</b> It is sunny.</p><p><b>What are you wearing?</b> I am wearing a coat.</p><p><b>I need an umbrella because it is rainy.</b></p><p class="tip">Use <b>a</b> before coat or shirt. Use <b>an</b> before umbrella.</p></section>
+
+<section><h2>Интихоби дуруст</h2><div class="question"><p>It is rainy. What do you need?</p><button class="choice" onclick="chooseAnswer(this,false)">A ticket</button><button class="choice" onclick="chooseAnswer(this,true)">An umbrella</button><button class="choice" onclick="chooseAnswer(this,false)">A doctor</button><p class="feedback"></p></div><div class="question"><p>Which sentence is correct?</p><button class="choice" onclick="chooseAnswer(this,true)">I am wearing a coat.</button><button class="choice" onclick="chooseAnswer(this,false)">I wearing coat.</button><p class="feedback"></p></div></section>
+
+<section><h2>Ҷумларо созед</h2><div class="typed"><p class="word-bank">weather / the / what / like / is</p><input type="text" aria-label="Build the question"><button onclick="checkTyped(this,'What is the weather like')">Check</button><p class="feedback"></p></div><div class="typed"><p class="word-bank">wearing / coat / am / a / I</p><input type="text" aria-label="Build the sentence"><button onclick="checkTyped(this,'I am wearing a coat')">Check</button><p class="feedback"></p></div></section>
+
+<section><h2>Гап занед</h2><div class="controls"><button class="primary" onclick="speakWithPauses(['What is the weather like?','It is cold and windy','I am wearing a coat','I need an umbrella','The bus leaves at ten','Let us go by taxi'],3500,.74)">▶ Start speaking drill</button><button onclick="pauseAudio()">⏸ Pause</button><button onclick="resumeAudio()">Continue</button></div></section>
+
+<section><h2>Санҷиши ҷамъбастӣ: Дарсҳои 10–12</h2><div class="question"><p>1. You want to know the departure time.</p><button class="choice" onclick="chooseAnswer(this,true)">What time does the train leave?</button><button class="choice" onclick="chooseAnswer(this,false)">What is wrong?</button><p class="feedback"></p></div>
+<div class="question"><p>2. Your head hurts.</p><button class="choice" onclick="chooseAnswer(this,false)">I have a ticket.</button><button class="choice" onclick="chooseAnswer(this,true)">I have a headache.</button><p class="feedback"></p></div>
+<div class="question"><p>3. It is cold outside.</p><button class="choice" onclick="chooseAnswer(this,true)">I need a coat.</button><button class="choice" onclick="chooseAnswer(this,false)">I need a train.</button><p class="feedback"></p></div>
+<div class="question"><p>4. You want to buy transport.</p><button class="choice" onclick="chooseAnswer(this,true)">I would like one ticket, please.</button><button class="choice" onclick="chooseAnswer(this,false)">My ticket hurts.</button><p class="feedback"></p></div>
+<div class="question"><p>5. It is raining.</p><button class="choice" onclick="chooseAnswer(this,false)">I need medicine.</button><button class="choice" onclick="chooseAnswer(this,true)">I need an umbrella.</button><p class="feedback"></p></div></section>
+
+<section><h2>Вазъияти воқеӣ</h2><p>You are leaving home. It is cold and rainy. You will travel by bus. Say what you wear, what you need, and ask when the bus leaves.</p><textarea rows="6" placeholder="It is cold and rainy..."></textarea><button onclick="speakText('It is cold and rainy. I am wearing a coat. I need an umbrella. I am going by bus. What time does the bus leave?',.74)">▶ Hear a model answer</button></section>
+
+<section><h2>Вазифаи хонагӣ</h2><p>Обу ҳавои имрӯзаро бо се калима тасвир кунед. Либосеро, ки мепӯшед, номбар кунед. Пас як ҷумла аз ҳар дарси 10, 11 ва 12 нависед.</p></section>
+<div class="lesson-nav"><a class="button" href="lesson11.html">← Previous</a><a class="button" href="index.html">Course Home →</a></div>
+</main><footer class="footer">English for Tajik Speakers</footer></body></html>
