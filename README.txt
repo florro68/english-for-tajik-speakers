@@ -1,23 +1,12 @@
-ENGLISH FOR TAJIK SPEAKERS — LESSONS 7–9 UPDATE
+English for Tajik Speakers — Lessons 16–18 update
 
-Upload ALL files in this folder to the EXISTING GitHub repository.
+Upload the eight files into the ROOT of the existing GitHub repository.
+New: lesson16.html, lesson17.html, lesson18.html
+Updated: index.html and lesson15.html
+Shared: script.js and styles.css (existing browser speech support)
+README.txt: instructions only
 
-This update:
-- replaces index.html
-- replaces lesson6.html so Lesson 6 points to Lesson 7
-- adds lesson7.html
-- adds lesson8.html
-- adds lesson9.html
-- keeps the shared styles.css and script.js synchronized
+Commit message: Add Lessons 16 to 18
 
-Suggested commit message:
-Add Lessons 7 to 9
-
-After committing:
-1. Wait 1–2 minutes.
-2. Open the public GitHub Pages site.
-3. Refresh the page.
-4. Confirm the homepage says 9 of 20 lessons are ready.
-5. Test Lessons 1–9.
-6. Test the audio buttons in Lessons 7–9.
-7. Confirm Lesson 6 → 7 → 8 → 9 navigation works.
+After GitHub Pages republishes, refresh and test Lessons 15–18, navigation and vocabulary/conversation audio.
+Tajik language review by a fluent speaker is recommended before broad distribution.
